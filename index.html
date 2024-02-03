@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div> 
+        <form method="post" id="Registration-form">
+            <div class="user-details">
+                <label class="info" id="name-label" for="name"> Full Name <input id="name"   type="text" placeholder="Enter your name" required></label>
+                <label class="info" id="username-label" for="username"> Username <input id="username"    type="text" placeholder="Enter your username" required></label>
+                <label class="info" id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email" required/></label>
+                <label class="info" id="number-label" for="number">Phone Number<input id="number" type="text" placeholder="Enter your number" required></label>
+                <label class="info" id="name-label" for="password"> Password <input id="password"   type="password" placeholder="Enter your password" required></label>
+                <label class="info" id="name-label" for="password"> Confirm password <input id="password"   type="password" placeholder="Confirm your password" required></label>
+            </div>
+            <div class="gender-details">
+                <legend class="gender-title">Gender</legend>
+                <div class="category">
+                    <label class='gender' for="male">
+                            <input type="radio" name="gender" required>
+                            male
+                    </label>
+                    <label class='gender' for="female">
+                            <input type="radio" name="gender" required>
+                            female
+                    </label>
+                    <label class='gender' for="">
+                            <input type="radio" name="gender" required>
+                            prefer not to say
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
